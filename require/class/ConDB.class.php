@@ -25,10 +25,13 @@ abstract class ConDB //não pode instanciar, só extender - teste na linha 26
 
 //$conn = new ConDB;
 
-#$crud = new CRUD;
 /*
-var_dump($crud->insert('user','usuario=?,email=?,cidade=?',['nomeDoUsuário','teste@gmail.com','CidadeDeDeus'])); #teste para inserção
-*/#teste insert
+$crud = new CRUD;
+$cripto = new Cripto;
+$senha = $cripto->setCripto('overid123')
+
+var_dump($crud->insert('usuario','usuario=?,email=?,senha=?',['Maria','teste@gmail.com',$senha])); #teste para inserção
+#teste insert
 
 /*
 $sel = $crud->select('*','user','WHERE idUser=?',[6]);
@@ -59,7 +62,12 @@ $crud->delete('user','WHERE idUser=?',[8]);
 
 $vle = new ValidaEmail;
 var_dump($vle->setValidaEmail('emersonline@commerson.gnn'));
-*/
+
 
 $vPass = new ValidaSenha;
 var_dump($vPass->setValidaSenha('overike-.'));
+#teste Criptografia
+*/
+
+$lgn = new Login;
+var_dump($lgn->setLogin('teste@gmail.com','overid123'));

@@ -17,7 +17,8 @@ class Cripto
 
 	#teste
 }
-
+/*
 $cpt = new Cripto;
 var_dump($cpt->setCripto('a'));
 print strlen($cpt->setCripto('a'));
+*/
