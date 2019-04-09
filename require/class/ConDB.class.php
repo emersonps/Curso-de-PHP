@@ -1,7 +1,6 @@
 <?php 
 
 #require_once "CRUD.class.php"; //manual ou:
-
 function __autoload($class){
 	require_once"{$class}.class.php"; //puxa todas as classes da pasta class (apenas o prefixo )
 } 
@@ -9,13 +8,13 @@ function __autoload($class){
 
 abstract class ConDB //não pode instanciar, só extender - teste na linha 26
 {
-	private static $cnx;
+	private $cnx;
 	private function setConn()
 	{
 		return 
-			is_null(self::$cnx) ? 
-				self::$cnx = new PDO("mysql:host=localhost;dbname=idealplacas","Admin","admin") :
-				self::$cnx;
+			is_null($this->$cnx) ? 
+				$this->$cnx = new PDO("mysql:host=localhost;dbname=idealplacas","Admin","admin") :
+				$this->$cnx;
 	}
 	
 	public function getConn()
@@ -23,13 +22,15 @@ abstract class ConDB //não pode instanciar, só extender - teste na linha 26
 		return $this->setConn();
 	}
 }
+
 //$conn = new ConDB;
 
+#$crud = new CRUD;
 /*
-$crud = new CRUD;
+var_dump($crud->insert('user','usuario=?,email=?,cidade=?',['nomeDoUsuário','teste@gmail.com','CidadeDeDeus'])); #teste para inserção
+*/#teste insert
 
-//var_dump($crud->insert('user','usuario=?,email=?,cidade=?',['nomeDoUsuário','teste@gmail.com','CidadeDeDeus'])); #teste para inserção
-
+/*
 $sel = $crud->select('*','user','WHERE idUser=?',[6]);
 foreach($sel as $reg)
 {
@@ -37,8 +38,28 @@ foreach($sel as $reg)
 	//var_dump($reg['usuario'].' -> '.$reg['email']);
 	$_SESSION['user']=$reg;
 }
-
 var_dump($_SESSION['user']['usuario']);
 echo '<br>';
 var_dump($_SESSION['user']['email']);
+*/#teste Select
+
+/*
+$crud = new CRUD;
+$upd = $crud->update('user','usuario=?, email=?, cidade=? WHERE idUser=?',
+		['Maria Pinheiro de Souza','mariapsonline@gmail.com','Manaus', 7]);
+//var_dump($upd);
+//var_dump($upd->rowCount());
+print $upd->rowCount() < 1 ? 'Não há atualizações a fazer!' : 'Atualização realizada com sucesso!'; */#teste Update
+
+/*
+$crud = new CRUD;
+
+$crud->delete('user','WHERE idUser=?',[8]);
+#teste Delete
+
+$vle = new ValidaEmail;
+var_dump($vle->setValidaEmail('emersonline@commerson.gnn'));
 */
+
+$vPass = new ValidaSenha;
+var_dump($vPass->setValidaSenha('overike-.'));
