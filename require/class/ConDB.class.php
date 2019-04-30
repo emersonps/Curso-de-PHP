@@ -70,4 +70,4 @@ var_dump($vPass->setValidaSenha('overike-.'));
 */
 
 $lgn = new Login;
-var_dump($lgn->setLogin('teste@gmail.com','overid123'));
+//var_dump($lgn->setLogin('teste@gmail.com','overid123'));

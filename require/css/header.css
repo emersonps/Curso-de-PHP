@@ -1,0 +1,6 @@
+*{margin: 0; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 12px;}
+
+#dvBase{background: #fff; 
+	width: 1007px; /*largura do px do monitor -17px da barra de rolagem (monitor de resol. 1024*/
+	height: 100%; 
+	margin: 0 auto; /* topo, direita, base, esquerda * - usando os dois (topo+base = 0, dir+esq= auto)*/}

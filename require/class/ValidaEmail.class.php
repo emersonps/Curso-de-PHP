@@ -9,8 +9,9 @@ class ValidaEmail
 		//if(strlen($email) == '')
 		//if(empty($email)
 		//if($email == '')
-		if(!$email)
+		if(strlen($email) < 1)
 			return 'Informe o e-mail';
+		
 		
 		//preg_matcth valida o formato do e-mail. Expressão regular para aperfeiçoar o código no 1º parâmetro; Parâmetros: 1-o que será validado 2-onde. Expressão: i = insensitive; '+'=obriga '*'=opcional, '\'=escape de caractere, {minimo, maximo}. Ex.: nome_email-nome.teste@teste.com.br
 		else
