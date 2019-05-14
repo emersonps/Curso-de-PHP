@@ -1,3 +1,14 @@
+<?php
+	//var_dump($_SERVER)
+	require_once "require/class/CRUD.class.php";
+	require_once "require/config/config.php";
+	//var_dump(REDIRECT_URL);
+
+	//print redirect_query_string;
+
+	$urlAmigavel = new UrlAmigavel;
+	$returnUrlAmigavel = $urlAmigavel->setUrlAmigavel(REDIRECT_URL);
+?>
 <!DOCTYPE html>
 <html>
 <head>

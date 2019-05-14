@@ -40,7 +40,9 @@ class Login
 				}
 			}
 			else
-			{return 'Acesso negado.';}
+			{
+				return 'Acesso negado.';
+			}
 		}
 	}
 }

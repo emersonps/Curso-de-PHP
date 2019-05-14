@@ -1,11 +1,4 @@
 <?php 
-
-#require_once "CRUD.class.php"; //manual ou:
-function __autoload($class){
-	require_once"{$class}.class.php"; //puxa todas as classes da pasta class (apenas o prefixo )
-} 
-
-
 abstract class ConDB //não pode instanciar, só extender - teste na linha 26
 {
 	private $cnx;
@@ -69,5 +62,5 @@ var_dump($vPass->setValidaSenha('overike-.'));
 #teste Criptografia
 */
 
-$lgn = new Login;
+//$lgn = new Login;
 //var_dump($lgn->setLogin('teste@gmail.com','overid123'));
