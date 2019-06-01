@@ -1,16 +1,14 @@
 <?php
-	//var_dump($_SERVER)
 	require_once "require/class/CRUD.class.php";
 	require_once "require/config/config.php";
-	//var_dump(REDIRECT_URL);
-
-	//print redirect_query_string;
-
+	
+	$r_QueryString = explode('/',substr(REDIRECT_QUERY_STRING,3));
+		
 	$urlAmigavel = new UrlAmigavel;
-	$returnUrlAmigavel = $urlAmigavel->setUrlAmigavel(REDIRECT_URL);
+	$returnUrlAmigavel = $urlAmigavel->setUrlAmigavel(REDIRECT_URL);//pega tudo após / na url
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
 	<meta charset="utf-8">
 	<title>Projeto Loja Virtual !!!</title>

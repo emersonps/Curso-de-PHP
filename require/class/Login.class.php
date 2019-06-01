@@ -1,13 +1,16 @@
 <?php 
+require_once"ValidaEmail.class.php";
+require_once"ValidaSenha.class.php";
+require_once"Cripto.class.php";
+require_once"CRUD.class.php";
 
 class Login
 {
-
 	private $vem , $vsh, $cpt, $crud, $email, $log, $dds;
 
 	public function setLogin($email, $senha)
 	{
-		$this->vem = new validaEmail;
+		$this->vem = new ValidaEmail;
 		$this->vsh = new ValidaSenha;
 		$this->cpt = new Cripto;
 		$this->crud = new CRUD;
