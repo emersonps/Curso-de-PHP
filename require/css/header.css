@@ -1,6 +1,36 @@
+.teste{
+	font-size: 100px;
+}
+/*
 *{margin: 0; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 12px;}
 
 #dvBase{background: #fff; 
-	width: 1007px; /*largura do px do monitor -17px da barra de rolagem (monitor de resol. 1024*/
+	width: 1007px; /*largura do px do monitor -17px da barra de rolagem (monitor de resol. 1024
 	height: 100%; 
-	margin: 0 auto; /* topo, direita, base, esquerda * - usando os dois (topo+base = 0, dir+esq= auto)*/}
+	margin: 0 auto; /* topo, direita, base, esquerda * - usando os dois (topo+base = 0, dir+esq= auto)}*/
+
+
+*{font-family: arial; margin:0; padding: 0; list-style: none; text-decoration: none; color:#000;}
+
+html{font-size:100%; width: 100%; float: left}
+body{width: 1007px; font-size: 12px; margin:0 auto;}
+header,main,footer
+{
+	background: #fff; float:left; width: 100%;
+}
+header{margin-bottom: 60px;}
+
+header div:nth-of-type(1),
+header div:nth-of-type(2),
+header nav
+{
+	float:left;width: 100%;
+}
+
+header div:nth-of-type(1)[] /*aplicando na primeira filha div do header*/
+	header div:nth-of-type(1) ul{float:left;width: 100%; padding: 8px 0;}
+		header div:nth-of-type(1) > ul > li{float:left;padding-right: 10px;}
+		header div:nth-of-type(1) > ul > li:last-child{padding-right: 0;}/*remove o px que sobra à direita pra não quebrar o css na página*/
+			header div:nth-of-type(1) > ul > li > a{font-size: 11px}
+			header div:nth-of-type(1) > ul > li > a:hover{text-decoration: underline;}
+				header div:nth-of-type(1) > ul > li > a > i{float:left;margin:2px 2px 0 0;}
