@@ -23,18 +23,18 @@
 				<ul>
 					<li><a href=""><i class="fa fa-truck"></i> Frete Grátis</a></li>
 					<li><a href=""><i class="fa fa-phone"></i> Central de Atendimento</a></li>
-					<li><a href=""><i class="fa fa-pencil-ruler"></i> Saiba sobre as regras de devolução</a></li>
+					<li><a href=""><i class="fa fa-exchange-alt"></i> Saiba sobre as regras de devolução</a></li>
 				</ul>
 			</div>
 
 			<div>
 				<figure>
-					<a href=""><img src="require<?=LOGO?>logo-idealplacas.png" width="100px"></a>	
+					<a href="/"><img src="require<?=LOGO?>logo-idealplacas.png" width="90px"></a>	
 				</figure>
 
 				<form>
-					<input type="search" class="" />
-					<button class="">Buscar</button>
+					<input type="search" class="inputButton input" />
+					<button class="inputButton button">Buscar</button>
 				</form>
 
 				<section>
@@ -50,45 +50,41 @@
 
 				<nav>
 					<ul>
-						<li>
-							<a href="">Oferta do Dia</a>
-						</li>
+						<li><a href="">Oferta do Dia</a></li>
 						<!-- Submenus -->
 						<?php
-							$itensMenu = array('Massa Muscular','Próteínas','Vitaminas','Energia','Acessórios','Massa Muscular','Energia');
+							$itensMenu = array('Placas','Clientes','Modelos','Vídeos','Galeria','Pedidos','Devolução');
 							
-							foreach ($itensMenu as $itensMenu) {
+							foreach ($itensMenu as $itensMenu) 
+							{
 						?>
-							<li>
-								<a href=""><?= $itensMenu ?></a>
-								<ul>
-									<figure>
-										<img src="require<?=PRODUTO?>zma.png">
-										<figcaption>
-											<p>ZMA - 90 Cápsulas - Optium Nutrition</p>
-											
-											<span>
-												<?php 
-													$desc='O ZMA é um suplemento alimentar vitamínico, uma combinação de zinco, magnésio e vitamina B6. Um suplemento efetivo para aumento da recuperação, força e resultando em ganho de massa muscular.'; 
-													print substr($desc, 0,100).'...';
-												?>
-											</span>
+						<li>
+							<a href=""><?= $itensMenu ?></a>
+							<ul>
+								<figure>
+									<img src="require<?=PRODUTO?>amostra.png">
+									<figcaption>
+										<p>PlacasDecorativa - MDF</p>
+										<span>
+											<?php 
+												$desc='Nossas placas são produzidas em MDF de 3, 4 e 12mm, impressão em Vinil, ou seja, além de ter qualidade de imagem, a placa pode ser limpo com pano úmido e não mancha.'; 
+												print substr($desc, 0,120).'...';
+											?>
+										</span>
 
-											<a href="">Confirmar esta Oferta</a>
-										</figcaption>
-									</figure>
-									<li><a href="">BCA</a></li>
-									<li><a href="">Pré-Hormonais</a></li>
-									<li><a href="">Pré-Treinos</a></li>
-									<li><a href="">ZMA</a></li>
-									<li><a href="">Packs</a></li>
-								</ul>	
-							</li>
+										<a href=""> >>>Confira esta Oferta</a>
+									</figcaption>
+								</figure>
+								<li><a href="">Material: MDF</a></li>
+								<li><a href="">Impressão: Vinil</a></li>
+								<li><a href="">Tamanho: Diversos</a></li>
+								<li><a href="">Preço: conforme o tamanho</a></li>
+								<li><a href="">Resistente a respingo de água.</a></li>
+							</ul>	
+						</li>
 						<?php }; ?>
 
-						<li>
-							<a href="">Blog</a>
-						</li>
+						<li><a href="">Blog</a></li>
 					</ul>
 				</nav>
 			</div>
