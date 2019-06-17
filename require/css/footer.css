@@ -1,0 +1,50 @@
+footer{padding-bottom: 1rem;background: #eee;}
+	footer > div:nth-of-type(1),
+	footer > div:nth-of-type(2)
+	{
+		width: 98.02%;float:left;padding: 1rem;
+	}
+	footer > div:nth-of-type(1){background: #D69E06;}
+		footer > div:nth-of-type(1) > form:nth-child(1){float:left;width:31%;}
+			footer > div:nth-of-type(1) > form:nth-child(1) > input[type="search"],
+			footer > div:nth-of-type(1) > form:nth-child(1) > button
+			{
+				float: left;border:none;
+			}
+			footer > div:nth-of-type(1) > form:nth-child(1) > button{background:url('../img/projeto/busca-footer.png');width:2.9rem;height:2.7rem;cursor:pointer;margin:.1rem 0 0 -7.9rem}
+			footer > div:nth-of-type(1) > form:nth-child(1) > input[type="search"]{max-width:8rem;padding-left:3.3rem;}
+
+		footer > div:nth-of-type(1) > form:nth-child(2){float:right;width:65%;}
+			footer > div:nth-of-type(1) form:nth-of-type(2) > input,
+			footer > div:nth-of-type(1) form:nth-of-type(2) > button
+			{
+				float: left;border:none; 
+			}
+			footer > div:nth-of-type(1) > form:nth-child(2) > input[type="text"]{width:26rem;margin-right:.1rem;}
+			footer > div:nth-of-type(1) > form:nth-child(2) > input[type="email"]{width:29rem;}
+			footer > div:nth-of-type(1) > form:nth-child(2) > button{width: 7rem;float:right;}
+
+	footer > div:nth-of-type(2){}
+		footer > div:nth-of-type(2) > nav{float:left;width: 65rem;}
+			footer > div:nth-of-type(2) > nav > ul{float:left;width:50%;margin-bottom:2rem;}
+				footer > div:nth-of-type(2) > nav > ul > li:nth-of-type(1){font-size:1.4rem;border-bottom:.1rem solid #ccc;padding-bottom: .5rem;margin-bottom: .5rem;color:#000;}
+				footer > div:nth-of-type(2) > nav > ul > li,
+				footer > div:nth-of-type(2) > nav > ul > li > span,
+				footer > div:nth-of-type(2) > nav > ul > li > a
+				{
+					color: #999; float: left;
+				}
+					footer > div:nth-of-type(2) > nav > ul > li:nth-child(1) > i{margin-right: .5rem;width: .8rem;}
+				footer > div:nth-of-type(2) > nav > ul > li{width: 95%;margin-bottom:.3rem;vertical-align: middle;}
+					footer > div:nth-of-type(2) > nav > ul > li > span{margin-top:.5rem;width:7rem;}
+					footer > div:nth-of-type(2) > nav > ul > li > a:hover{color:#D69E06;}
+						footer > div:nth-of-type(2) > nav > ul > li > a > img{height:2.4rem;margin-right:.5rem;}
+						footer > div:nth-of-type(2) > nav > ul:nth-child(5) > li > img{width:1.2rem;vertical-align:middle;}					
+	footer > div:nth-of-type(2) > div{float:right;width: 330px;}					
+
+
+
+
+
+
+

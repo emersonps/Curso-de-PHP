@@ -11,13 +11,16 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Ideal Placas Decorativas</title>
-		<link rel="stylesheet" type="text/css" href="require/css/header.css" />
-		<link rel="stylesheet" href="require/fontawesome/css/all.css" />
-		<script type="text/javascript" src="require/js/jquery.js"></script>
-		<script type="text/javascript" src="require/js/login.js"></script>
+		<link rel="stylesheet" type="text/css" href="/require/css/header.css" />
+		<link rel="stylesheet" href="/require/fontawesome/css/all.css" />
+		<script type="text/javascript" src="/require/js/jquery.js"></script>
+		<script type="text/javascript" src="/require/js/login.js"></script>
 	</head>
 
 	<body>
+		<div id="fb-root"></div>
+		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.3"></script>
+		
 		<header>
 			<div>
 				<ul>
@@ -29,12 +32,12 @@
 
 			<div>
 				<figure>
-					<a href="/"><img src="require<?=LOGO?>logo-idealplacas.png" width="90px"></a>	
+					<a href="/"><img src="/require<?=LOGO?>logo-idealplacas.png"></a>	
 				</figure>
 
 				<form>
-					<input type="search" class="inputButton input" />
-					<button class="inputButton button">Buscar</button>
+					<input type="search" class="inputButton input" value="Busca por Produtos, Categorias, Subcategorias, Modelos, etc..."/>
+					<button class="button inputButton">Buscar</button>
 				</form>
 
 				<section>
@@ -53,7 +56,7 @@
 						<li><a href="">Oferta do Dia</a></li>
 						<!-- Submenus -->
 						<?php
-							$itensMenu = array('Placas','Clientes','Modelos','Vídeos','Galeria','Pedidos','Devolução');
+							$itensMenu = array('Placas','Clientes','Modelos','Vídeos','Galeria','Pedidos','Devolução','Frete','Varejo','Atacado');
 							
 							foreach ($itensMenu as $itensMenu) 
 							{
@@ -62,7 +65,7 @@
 							<a href=""><?= $itensMenu ?></a>
 							<ul>
 								<figure>
-									<img src="require<?=PRODUTO?>amostra.png">
+									<img src="/require<?=PRODUTO?>prod1.png">
 									<figcaption>
 										<p>PlacasDecorativa - MDF</p>
 										<span>
@@ -72,7 +75,7 @@
 											?>
 										</span>
 
-										<a href=""> >>>Confira esta Oferta</a>
+										<a href="" class="link">Confira esta Oferta</a>
 									</figcaption>
 								</figure>
 								<li><a href="">Material: MDF</a></li>
