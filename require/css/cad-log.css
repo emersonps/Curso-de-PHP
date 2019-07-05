@@ -1,6 +1,6 @@
 main > div{float:left;width: 100%;padding: 3rem 0;}
 	main > div > div{width: 80%; margin:0 auto;}
-		main > div > div > form{width: 45%;float:left;height: 15rem;background:#eee;padding: 3rem 1rem;text-align: center;}
+		main > div > div > form{width: 45%;float:left;height: 15rem;background:#FFF3D1;padding: 3rem 1rem;text-align: center;}
 			main > div > div > form *{float:left; margin: .5rem;}
 			main > div > div > form input{width: calc(100% - 1.2rem);}
 			main > div > div > form button{background: #D69E06 !important; width:100%;color:#fff !important;}
