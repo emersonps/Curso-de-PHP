@@ -1,7 +1,8 @@
+/*
 .teste{
 	font-size: 100px;
 }
-/*
+
 *{margin: 0; font-family: 'lucida grande', tahoma, verdana, arial, sans-serif; font-size: 12px;}
 
 #dvBase{background: #fff; 
@@ -10,7 +11,7 @@
 	margin: 0 auto; /* topo, direita, base, esquerda * - usando os dois (topo+base = 0, dir+esq= auto)}*/
 
 
-*{font-family: arial; margin:0; padding: 0; list-style: none; text-decoration: none; color:#000;}
+*{font-family: arial; margin:0; padding: 0; list-style: none; text-decoration: none; color:#000;outline: none}
 
 html{font-size:62.5%; width: 100%; float: left; background: #2b2b2b;}
 body{width: 100.7rem; font-size: 1.2rem; margin:0 auto;}
@@ -29,6 +30,7 @@ header{}
 .button:hover{opacity: .6;}
 .link{color:#888;}
 .link:hover{text-decoration: underline;color:#000;}
+.title{font-size: 2.1rem;font-weight: bolder;margin-bottom:.5rem;width: 100%;float:left;}
 header div:nth-of-type(1),
 header div:nth-of-type(2),
 header nav
@@ -60,7 +62,7 @@ header div:nth-of-type(2){margin: 1rem 0;}
 			float: left;
 		}
 		header div:nth-of-type(2) > form input[type="search"]{width: 40rem;border:1px solid #FFCD42;}
-		header div:nth-of-type(2) > form button{margin-left: -.1rem;width: 6rem;}
+		header div:nth-of-type(2) > form button{margin-left: -.1rem;width: 6rem;background: #D69E06; color: #fff;}
 	header div:nth-of-type(2) > section{float:right;width: auto;margin:1.2rem 1rem 1.2rem 0;}
 		header div:nth-of-type(2) > section > figure{float:left;vertical-align: baseline;}
 		header div:nth-of-type(2) > section > figure:nth-child(1) {border-right: .1rem solid #ccc; padding-right: 1rem;margin-right: 1rem;} 
@@ -75,12 +77,12 @@ header div:nth-of-type(2){margin: 1rem 0;}
 		header div:nth-of-type(2) > section > figure:nth-child(2){}
 			header div:nth-of-type(2) > section > figure:nth-child(2) > a > img{width: 30px;}
 header nav{}
-	header nav > ul{background: #eee;float:left; width:100%;}
+	header nav > ul{background: #fff3d1;float:left; width:100%;}
 		header nav > ul > li:nth-of-type(1){background: #D69E06;}
 		header nav > ul > li:nth-of-type(1) > a{color: #fff;}
-		header nav > ul > li{float:left;position: relative;font-size: 1.2rem;} 
+		header nav > ul > li{float:left;position:relative;font-size: 1.2rem;} 
 		header nav > ul > li:hover{background: #D69E06;}
-		header nav > ul > li:nth-last-of-type(1){float: right;}
+		header nav > ul > li:nth-last-of-type(1){float:right;}
 		header nav > ul > li:nth-last-of-type(1):hover{background: none;}
 		header nav > ul > li:nth-last-of-type(1) > a:hover{color:#000;}
 		header nav > ul > li:nth-last-of-type(2) > ul,
@@ -90,7 +92,7 @@ header nav{}
 		}
 			header nav > ul > li > a{font-size: 1.2rem; padding: 1rem;cursor:pointer;float:left;}
 			header nav > ul > li > a:hover{color:#fff;}
-			header nav > ul > li > ul{background: #fff;border:5px solid #D69E06;position: absolute;top: 85%;width: 37rem;padding:1.5rem;display:none}
+			header nav > ul > li > ul{background: #fff;border:5px solid #D69E06;position: absolute;top: 85%;width: 37rem;padding:1.5rem;display:none;z-index:1;}
 			header nav > ul > li:hover > ul{display: block}
 				header nav > ul > li > ul figure,	
 				header nav > ul > li > ul > li

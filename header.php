@@ -3,7 +3,6 @@
 	require_once "require/config/config.php";
 	
 	$r_QueryString = explode('/',substr(REDIRECT_QUERY_STRING,3));
-		
 	$urlAmigavel = new UrlAmigavel;
 ?>
 <!DOCTYPE html>
@@ -47,7 +46,7 @@
 					</figure>
 
 					<figure>
-						<a href="/login"><i class="fa fa-user fa-2x" title="Acessar Minha Conta"></i></a>
+						<a href="/cad-log"><i class="fa fa-user fa-2x" title="Acessar Minha Conta"></i></a>
 					</figure>
 				</section>
 
