@@ -11,7 +11,7 @@ class Cripto
 		#$_cripto = hash('whirlpool',$param);
 
 		$_cripto = hash('whirlpool',hash('sha512',hash('sha384',hash('sha256',sha1(md5('pradificultar'.$param))))));
-
+		
 		return $_cripto;
 	}
 

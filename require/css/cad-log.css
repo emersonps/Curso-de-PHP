@@ -7,4 +7,5 @@ main > div{float:left;width: 100%;padding: 3rem 0;}
 
 		main > div > div > form:nth-of-type(2){float: right;}
 			main > div > div > form:nth-of-type(2) a{}
-				main > div > div > form:nth-of-type(2) a + p{color:#f00;font-size: 1.2rem;font-weight: bolder;float:right;} /* tag +tag -> pegar a primeira tage que vem após*/
+				main > div > div > form:nth-of-type(2) a + p{color:#f00;font-size: 1.2rem;font-weight: bolder;float:right;} /* tag +tag -> pegar a primeira tag que vem após*/
+				

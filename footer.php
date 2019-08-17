@@ -67,13 +67,13 @@
 				<div>
 					<div 
 						class="fb-page" 
-						data-href="https://www.facebook.com/idealplacasdeco/?ref=bookmarks"  
+						data-href="https://www.facebook.com/idealplacasdeco"  
 						data-tabs="messages, timeline" 
 						data-width="330" 
 						data-height="420" 
-						data-small-header="false" 
+						data-small-header="true" 
 						data-adapt-container-width="true" 
-						data-hide-cover="false" 
+						data-hide-cover="true" 
 						data-show-facepile="true">
 						<div class="fb-xfbml-parse-ignore">
 							<blockquote cite="https://www.facebook.com/idealplacasdeco/?ref=bookmarks" class="fb-xfbml-parse-ignore">

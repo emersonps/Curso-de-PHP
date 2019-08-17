@@ -14,7 +14,7 @@ class CRUD extends ConDB
 
 	public function insert($table, $cond, $exec)
 	{
-		$this->prepExec('INSERT INTO '.$table.' SET '.$cond.'',$exec);
+		$teste = $this->prepExec('INSERT INTO '.$table.' SET '.$cond.'',$exec);		
 		return $this->getConn()->lastInsertId();
 	}
 

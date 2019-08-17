@@ -14,11 +14,12 @@
 		<link rel="stylesheet" href="/require/fontawesome/css/all.css" />
 		<script type="text/javascript" src="/require/js/jquery.js"></script>
 		<script type="text/javascript" src="/require/js/login.js"></script>
+		<script type="text/javascript" src="/require/js/global.js"></script>
 	</head>
 
 	<body>
 		<div id="fb-root"></div>
-		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.3"></script>
+		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v4.0"></script>
 		
 		<header>
 			<div>

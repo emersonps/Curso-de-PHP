@@ -1,0 +1,31 @@
+main > div{width: 100%; float:left;padding: 4.5rem 0 3rem;}
+	main > div > div{margin:0 auto; width: 55.2rem; text-align: center;}
+		main > div > div > label{background: #D69E06; width: 15rem; padding: 1.5rem;color:#fff;font-weight: bolder;font-size: 1.4rem;cursor:pointer;}
+			main > div > div > label > input[type='radio']{margin-right: .5rem;vertical-align: sub;}	
+		main > div > div > form{float:left;width: 100%;margin-top: 3rem;}
+								.msg-cad{color:#fff;background: #ff3131;border:none;float:left;width: calc(100% - .5rem);padding: 5px 0;font-size:1.4rem;font-weight: bolder;display: none;}
+		main > div > div > form > p{text-align: left; float:left;width: calc(100% - .5rem);font-size: 1.5rem;font-weight:bolder;margin:2rem 0 1rem;padding-bottom:.2rem;border-bottom-style:groove;}
+			main > div > div > form > label{float: left;margin: 0 .5rem .5rem 0;}
+			main > div > div > form > label:last-child{margin-bottom: 0;}
+				#nomerazao{width: 40.5rem;}
+				#genero{width: 12.5rem;}
+				#nascimento{width: 10rem;}
+				#documento{width: 14rem;}
+				#ddd{width: 3.1rem;}
+				#fixocomercial{width: 9.8rem;}
+				#celular{width: 9.8rem;}
+				#cep{width: 10rem;}
+				#estado{width: 18.8rem;}
+				#cidade{width: 22.5rem;}
+				#bairro{width: 21.7rem;}
+				#endereco{width: 30.1rem;}
+				#numero{width: 5rem;}
+				#complemento{width: 10rem;}
+				#observacoes{width: 35.1rem;}
+				#email{width: 26.1rem;}
+				#senha,
+				#rSenha{width: 12rem;}
+		main > div > div > form button{background: #D19A05 !important;border:none;color:#fff !important;float:left;width: calc(100% - .5rem);margin-top:2rem;}
+
+				
+

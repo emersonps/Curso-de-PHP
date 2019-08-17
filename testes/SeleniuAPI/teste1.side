@@ -1,0 +1,358 @@
+{
+  "id": "c08c6e49-7312-4523-bcde-9354cef96ee5",
+  "version": "2.0",
+  "name": "teste1",
+  "url": "http://www.idealplacas.com",
+  "tests": [{
+    "id": "212cadff-5b8d-41f0-a345-70a422030057",
+    "name": "Cadastro",
+    "commands": [{
+      "id": "05e13f67-1639-49ff-ba38-0ecfa015d480",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44e91951-03ef-4c9d-9258-5d587e27c528",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1095x630",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0fcb53cf-0b59-4d3a-8d06-5b4994dc3cab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-user",
+      "targets": [
+        ["css=.fa-user", "css:finder"],
+        ["xpath=//figure[2]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2bda18e-bcd6-4057-b244-1039a3019ba0",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(1) > .button",
+      "targets": [
+        ["css=form:nth-child(1) > .button", "css:finder"],
+        ["xpath=//button[@onclick=\"location.href='/cad-cliente'\"]", "xpath:attributes"],
+        ["xpath=//div/div/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continuar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eefa2536-993e-4a4e-86fb-29f06cca7b46",
+      "comment": "",
+      "command": "click",
+      "target": "id=nomerazao",
+      "targets": [
+        ["id=nomerazao", "id"],
+        ["css=#nomerazao", "css:finder"],
+        ["xpath=//input[@id='nomerazao']", "xpath:attributes"],
+        ["xpath=//form/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7433c034-2629-4f57-8e98-d558c0699480",
+      "comment": "",
+      "command": "type",
+      "target": "id=nomerazao",
+      "targets": [
+        ["id=nomerazao", "id"],
+        ["css=#nomerazao", "css:finder"],
+        ["xpath=//input[@id='nomerazao']", "xpath:attributes"],
+        ["xpath=//form/label/input", "xpath:position"]
+      ],
+      "value": "Emerson Pinheiro de Souza"
+    }, {
+      "id": "8e8bb856-6593-4ae4-abe6-c2bddba85e83",
+      "comment": "",
+      "command": "click",
+      "target": "id=genero",
+      "targets": [
+        ["id=genero", "id"],
+        ["css=#genero", "css:finder"],
+        ["xpath=//select[@id='genero']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "400a0a66-da73-4678-950e-0434871eb161",
+      "comment": "",
+      "command": "select",
+      "target": "id=genero",
+      "targets": [],
+      "value": "label=Masculino"
+    }, {
+      "id": "628aedca-e4f4-41cc-8b71-c0ffe6dff680",
+      "comment": "",
+      "command": "click",
+      "target": "id=genero",
+      "targets": [
+        ["id=genero", "id"],
+        ["css=#genero", "css:finder"],
+        ["xpath=//select[@id='genero']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be8a3eaa-9991-4f4a-ae33-757416705863",
+      "comment": "",
+      "command": "click",
+      "target": "id=nascimento",
+      "targets": [
+        ["id=nascimento", "id"],
+        ["css=#nascimento", "css:finder"],
+        ["xpath=//input[@id='nascimento']", "xpath:attributes"],
+        ["xpath=//label[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a45e634f-c547-481f-a363-499a262d1e60",
+      "comment": "",
+      "command": "type",
+      "target": "id=nascimento",
+      "targets": [
+        ["id=nascimento", "id"],
+        ["css=#nascimento", "css:finder"],
+        ["xpath=//input[@id='nascimento']", "xpath:attributes"],
+        ["xpath=//label[3]/input", "xpath:position"]
+      ],
+      "value": "07/01/1982"
+    }, {
+      "id": "38c3b36e-92f3-4581-96f0-c9d2f1c03555",
+      "comment": "",
+      "command": "type",
+      "target": "id=documento",
+      "targets": [
+        ["id=documento", "id"],
+        ["css=#documento", "css:finder"],
+        ["xpath=//input[@id='documento']", "xpath:attributes"],
+        ["xpath=//label[4]/input", "xpath:position"]
+      ],
+      "value": "852.585.982-68"
+    }, {
+      "id": "f389ee31-d02c-47bb-b8bf-b84f2dd0c48a",
+      "comment": "",
+      "command": "type",
+      "target": "id=ddd",
+      "targets": [
+        ["id=ddd", "id"],
+        ["css=#ddd", "css:finder"],
+        ["xpath=//input[@id='ddd']", "xpath:attributes"],
+        ["xpath=//label[5]/input", "xpath:position"]
+      ],
+      "value": "92"
+    }, {
+      "id": "bb4e7f37-e0f2-4c90-a6c3-76396dee5c82",
+      "comment": "",
+      "command": "type",
+      "target": "id=fixocomercial",
+      "targets": [
+        ["id=fixocomercial", "id"],
+        ["css=#fixocomercial", "css:finder"],
+        ["xpath=//input[@id='fixocomercial']", "xpath:attributes"],
+        ["xpath=//label[6]/input", "xpath:position"]
+      ],
+      "value": "9810-3663"
+    }, {
+      "id": "34b70c19-8f54-4bb3-be8a-875f13b4439a",
+      "comment": "",
+      "command": "type",
+      "target": "id=celular",
+      "targets": [
+        ["id=celular", "id"],
+        ["css=#celular", "css:finder"],
+        ["xpath=//input[@id='celular']", "xpath:attributes"],
+        ["xpath=//label[7]/input", "xpath:position"]
+      ],
+      "value": "9810-3663"
+    }, {
+      "id": "a0e8f997-5ae0-4706-b892-12c1270f90c5",
+      "comment": "",
+      "command": "type",
+      "target": "id=cep",
+      "targets": [
+        ["id=cep", "id"],
+        ["css=#cep", "css:finder"],
+        ["xpath=//input[@id='cep']", "xpath:attributes"],
+        ["xpath=//label[8]/input", "xpath:position"]
+      ],
+      "value": "69.028-347"
+    }, {
+      "id": "f0925798-9a5c-447c-91cb-bd404e1298da",
+      "comment": "",
+      "command": "select",
+      "target": "id=estado",
+      "targets": [],
+      "value": "label=São Paulo"
+    }, {
+      "id": "1832eded-0b00-415c-b037-c36578966cf4",
+      "comment": "",
+      "command": "select",
+      "target": "id=estado",
+      "targets": [],
+      "value": "label=Rio de Janeiro"
+    }, {
+      "id": "2c936b42-fcbd-4a4f-b49b-519789dcacb5",
+      "comment": "",
+      "command": "select",
+      "target": "id=estado",
+      "targets": [],
+      "value": "label=Minhas Gerais"
+    }, {
+      "id": "a95d76bb-5ff4-4294-8191-4341ffdb5b98",
+      "comment": "",
+      "command": "select",
+      "target": "id=estado",
+      "targets": [],
+      "value": "label=Bahia"
+    }, {
+      "id": "ad2937d4-7e72-452b-90a4-d3b046b611fb",
+      "comment": "",
+      "command": "select",
+      "target": "id=estado",
+      "targets": [],
+      "value": "label=Rio Grande do Sul"
+    }, {
+      "id": "3558f6ad-54fb-4c0d-bf3c-e24cf249ac7a",
+      "comment": "",
+      "command": "select",
+      "target": "id=estado",
+      "targets": [],
+      "value": "label=Amazonas"
+    }, {
+      "id": "93982c3d-3b8d-4a29-bede-4bbfcfe5e613",
+      "comment": "",
+      "command": "type",
+      "target": "id=cidade",
+      "targets": [
+        ["id=cidade", "id"],
+        ["css=#cidade", "css:finder"],
+        ["xpath=//input[@id='cidade']", "xpath:attributes"],
+        ["xpath=//label[10]/input", "xpath:position"]
+      ],
+      "value": "Manaus"
+    }, {
+      "id": "a68f288b-f853-46af-8bd1-e58b39c88e6f",
+      "comment": "",
+      "command": "type",
+      "target": "id=bairro",
+      "targets": [
+        ["id=bairro", "id"],
+        ["css=#bairro", "css:finder"],
+        ["xpath=//input[@id='bairro']", "xpath:attributes"],
+        ["xpath=//label[11]/input", "xpath:position"]
+      ],
+      "value": "Flores"
+    }, {
+      "id": "5dd9dde3-23a0-4ab6-a2fa-7018b21d06b2",
+      "comment": "",
+      "command": "type",
+      "target": "id=endereco",
+      "targets": [
+        ["id=endereco", "id"],
+        ["css=#endereco", "css:finder"],
+        ["xpath=//input[@id='endereco']", "xpath:attributes"],
+        ["xpath=//label[12]/input", "xpath:position"]
+      ],
+      "value": "Rua 1"
+    }, {
+      "id": "8a6cbbc8-d917-4f9e-bd22-bef337ee7b5b",
+      "comment": "",
+      "command": "type",
+      "target": "id=numero",
+      "targets": [
+        ["id=numero", "id"],
+        ["css=#numero", "css:finder"],
+        ["xpath=//input[@id='numero']", "xpath:attributes"],
+        ["xpath=//label[13]/input", "xpath:position"]
+      ],
+      "value": "20"
+    }, {
+      "id": "46b4f4de-1a8a-4d56-ba5e-ed5bf9ca3cee",
+      "comment": "",
+      "command": "type",
+      "target": "id=complemento",
+      "targets": [
+        ["id=complemento", "id"],
+        ["css=#complemento", "css:finder"],
+        ["xpath=//input[@id='complemento']", "xpath:attributes"],
+        ["xpath=//label[14]/input", "xpath:position"]
+      ],
+      "value": "Sta Cruz"
+    }, {
+      "id": "8903f4b7-d615-4928-8bfa-e3de62455a85",
+      "comment": "",
+      "command": "type",
+      "target": "id=observacoes",
+      "targets": [
+        ["id=observacoes", "id"],
+        ["css=#observacoes", "css:finder"],
+        ["xpath=//input[@id='observacoes']", "xpath:attributes"],
+        ["xpath=//label[15]/input", "xpath:position"]
+      ],
+      "value": "Nenhuma"
+    }, {
+      "id": "79468772-e469-4911-a4f3-f40063d66cd0",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//label[16]/input", "xpath:position"]
+      ],
+      "value": "emerson@bol.com"
+    }, {
+      "id": "9c24a10b-320b-4500-8643-6bb62ba0ca51",
+      "comment": "",
+      "command": "type",
+      "target": "id=senha",
+      "targets": [
+        ["id=senha", "id"],
+        ["css=#senha", "css:finder"],
+        ["xpath=//input[@id='senha']", "xpath:attributes"],
+        ["xpath=//label[17]/input", "xpath:position"]
+      ],
+      "value": "overid123"
+    }, {
+      "id": "3c2ef29a-2249-4d15-b7dd-47929c0bd02d",
+      "comment": "",
+      "command": "type",
+      "target": "id=rSenha",
+      "targets": [
+        ["id=rSenha", "id"],
+        ["css=#rSenha", "css:finder"],
+        ["xpath=//input[@id='rSenha']", "xpath:attributes"],
+        ["xpath=//label[18]/input", "xpath:position"]
+      ],
+      "value": "overid123"
+    }, {
+      "id": "d0e66882-cdd7-430b-9737-497b612dab3b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button:nth-child(22)",
+      "targets": [
+        ["css=.button:nth-child(22)", "css:finder"],
+        ["xpath=//button[@onclick='cadastrar()']", "xpath:attributes"],
+        ["xpath=//div/div/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'CADASTRAR')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "07a23ae0-6968-4fe0-9457-94560e94ef6a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["212cadff-5b8d-41f0-a345-70a422030057"]
+  }],
+  "urls": ["http://www.idealplacas.com/"],
+  "plugins": []
+}
