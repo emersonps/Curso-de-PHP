@@ -19,7 +19,7 @@ class Login
 		$this->senha = $this->vsh->setValidaSenha($senha);
 
 		$this->log = $this->senha == $senha ?
-		$this->crud->select('idUsuario','usuario','WHERE email=? && senha=?',
+		$this->crud->select('id','clientes','WHERE email=? && senha=?',
 						[$this->email,$this->cpt->setCripto($this->senha)]) : FALSE;
 
 		if($this->email<>$email)

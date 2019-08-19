@@ -35,13 +35,13 @@
 	if($rSenha <> $senha)
 		print 'Senhas não são iguais.';
 	else
-	if($crud->select('email','tbclientes','WHERE email=?',array($email))->rowCount()>0)
+	if($crud->select('email','clientes','WHERE email=?',array($email))->rowCount()>0)
 		print 'E-mail já existe em nossa base de dados!';
 	else
-	if($crud->select('documento','tbclientes','WHERE documento=?',array($documento))->rowCount()>0)
+	if($crud->select('documento','clientes','WHERE documento=?',array($documento))->rowCount()>0)
 		print 'Documento já existe em nossa base de dados!';
 	else
-		$crud->insert('tbclientes',
+		$crud->insert('clientes',
 			'nomerazao=?,genero=?,nascimento=?,documento=?,ddd=?,fixocomercial=?,celular=?,cep=?,estado=?,cidade=?,bairro=?,endereco=?,numero=?,complemento=?,observacoes=?,email=?,senha=?, situacao=?,data=?,hora=?',
 			array(
 				$filterIn->vEntradaUsuario($nomerazao),
