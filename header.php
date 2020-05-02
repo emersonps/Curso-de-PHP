@@ -47,7 +47,7 @@
 					</figure>
 
 					<figure>
-						<a href="/cad-log"><i class="fa fa-user fa-2x" title="Acessar Minha Conta"></i></a>
+						<a href="cad-log.php"><i class="fa fa-user fa-2x" title="Acessar Minha Conta"></i></a>
 					</figure>
 				</section>
 
