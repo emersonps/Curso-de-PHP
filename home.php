@@ -59,7 +59,7 @@
 
 <div>
 	<div>
-	<?php foreach($prodb as $produto_body): ?>
+		<?php foreach($prodb as $produto_body): ?>
 		<div>
 			<figure><img src="/require<?=PRODUTO?>prod<?= $produto_body['id'] ?>.png"></figure>
 			<figcaption>
