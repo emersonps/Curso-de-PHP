@@ -1,38 +1,57 @@
+<?php 
+	$prodh = $conexao->select('*', 'produtos', 'LIMIT 0,2', ['']);
+	$prodb = $conexao->select('*', 'produtos', 'LIMIT 2,9', ['']);
+?>
+
+
 <link type="text/css" rel="stylesheet" href="/require/css/home.css" />
 <div>
 </div>
 
 <aside>
 	<?php 
-		for($i=0;$i<2;$i++)
-		{
+		foreach($prodh as $produto_head): 
 	?>
-		<div>
-			<figure><a href=""><img src="/require<?=PRODUTO?>prod1.png" /></a></figure>
-			<figcaption>
-				<ul>
-					<li><a href="">Placas Decorativas em MDF</a></li>
-					<li>Decore seu ambiente com as Placas em MDF, Impressão em vinil com Brilho, imagens em alta definição. Tudo isso e mais, o cliente pode personalizar a placa como quiser!</li>
-					<li><a href="" class="link">Galeria</a></li>
-					<li><a href="" class="link">Tamanhos</a></li>
-					<li>de: <span>R$ 20,00</span></li>
-					<li>por: <span>R$ 18,00</span></li>
-					<li>parcelamos em até <span>8x</span></li>
-					<li>via boleto ou Débito desc. de <span>10%</span></li>	
-				</ul>
-			</figcaption>
-		</div>
-	<?php } ?>
+	<div>
+		<figure><a href=""><img src="/require<?=PRODUTO?>prod<?=$produto_head['id']?>.png" /></a></figure>
+		<figcaption>
+			<ul>
+				<li><a href=""><?= $produto_head['produto']?></a></li>
+				<li><?= $produto_head['descricao'] ?></li>
+				<li><a href="" class="link">Galeria</a></li>
+				<li><a href="" class="link">Tamanhos</a></li>
+				<li>de: <span>R$ <?= $produto_head['preco'] ?></span></li>
+				<li>por: <span>R$ <?= $produto_head['preco'] - ($produto_head['preco']*$produto_head['desconto']/100) ?></span></li>
+				<li>parcelamos em até <span><?= $produto_head['parcela']?>x</span></li>
+				<li>via <?= $produto_head['forma_pgto'] ?> desc. de <span>10%</span></li>
+			</ul>
+		</figcaption>
+	</div>
+	<?php endforeach; ?>	
 </aside>
 
 <nav>
 	<ul>
 		<li>
-			<i class="fa fa-plus"></i> Objetivos
+			<i class="fa fa-location-arrow"></i> Objetivos
 			<ul>
-				<li><a href="/produto">Visão</a></li>
+				<li><a href="">Visão</a></li>
 				<li><a href="">Foco</a></li>
 				<li><a href="">Meta</a></li>
+			</ul>
+		</li>
+	</ul>
+
+	<ul>
+		<li>
+			<i class="fa fa-shopping-cart"></i> Produtos
+			<ul>
+				<li><a href="">Placas Decorativas</a></li>
+				<li><a href="">Canecas Personalizadas</a></li>
+				<li><a href="">Papel de Parede Adesiva</a></li>
+				<li><a href="">Camisas</a></li>
+				<li><a href="">Sapatos Masculinos</a></li>
+				<li><a href="">Sapatos Femininos</a></li>
 			</ul>
 		</li>
 	</ul>
@@ -40,27 +59,29 @@
 
 <div>
 	<div>
-		<?php 
-			for($i=0;$i<21;$i++)
-			{
-		?>
+	<?php foreach($prodb as $produto_body): ?>
 		<div>
-			<figure><img src="/require<?=PRODUTO?>prod3.png"></figure>
+			<figure><img src="/require<?=PRODUTO?>prod<?= $produto_body['id'] ?>.png"></figure>
 			<figcaption>
 				<ul>
 					<li>.....................................................</li>
-					<li><a href="">Placas com detalhes EVA</a></li>
-					<li>de: <span>R$ 30,00</span></li>
-					<li>por: <span>R$ 25,00</span></li>
-					<li><span>2x</span> sem juros</li>
-					<li>via boleto ou Débito desc. de <span>5%</span></li>
+					<li><?= $produto_body['produto'] ?></li>
+					
+					<?php if($produto_body['desconto']>0){ ?>
+						<li>de: <span>R$ <?= $produto_body['preco'] ?></span></li>
+					<?php }else{ ?>
+						<li></li>
+					<?php };  ?>
+					
+					<li>por: <span>R$ <?= $produto_body['preco']-($produto_body['preco']*$produto_body['desconto']/100) ?></span></li>
+					<li><span><?= $produto_body['parcela']?>x</span> sem juros</li>
+					<li>via <?= $produto_body['forma_pgto'] ?> desc. de <span>10%</span></li>
 				</ul>
 			</figcaption>	
 		</div>
-		<?php } ?>
+		<?php endforeach; ?>
 	</div>
 
 	<aside>
-		
 	</aside>
 </div>

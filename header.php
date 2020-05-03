@@ -1,10 +1,13 @@
 <?php
 	require_once "require/class/CRUD.class.php";
 	require_once "require/config/config.php";
+
+	$conexao = new CRUD;
 	
 	$r_QueryString = explode('/',substr(REDIRECT_QUERY_STRING,3));
 	$urlAmigavel = new UrlAmigavel;
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 	<head>

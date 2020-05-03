@@ -6,14 +6,14 @@ abstract class ConDB //não pode instanciar, só extender - teste na linha 26
 		try
 		{
 			$opcoes = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
-			$PDO = new PDO("mysql:host=localhost;dbname=idealplacas","root","", $opcoes);
+			$cnx = new PDO("mysql:host=localhost;dbname=idealplacas","root","", $opcoes);
 		}
 		catch ( PDOException $e )
 		{
 			echo 'Erro ao conectar com o MySQL: ' . $e->getMessage();
 		}
 
-		return $PDO;
+		return $cnx;
 	}
 	
 	public function getConn()
