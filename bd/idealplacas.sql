@@ -1,14 +1,13 @@
--- phpMyAdmin SQL Dump
--- version 4.9.1
+﻿-- phpMyAdmin SQL Dump
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 02-Maio-2020 às 21:56
--- Versão do servidor: 10.4.8-MariaDB
--- versão do PHP: 7.2.23
+-- Tempo de geração: 17-Jun-2020 às 03:36
+-- Versão do servidor: 10.4.11-MariaDB
+-- versão do PHP: 7.3.17
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -66,6 +65,42 @@ INSERT INTO `clientes` (`id`, `usuario`, `email`, `senha`, `nivel`, `nomerazao`,
 (5, '', 'maria@gmail.com', 'ea09b9076e2b350e9de8278650b3bc3cf5a3c6b085a4bb85655364bfadf3d753665300ef4952405a0cb99c4dee07100155920dfbef40ad4c97885322aedccb60', 0, 'Maria Pinheiro de Souza', '02/04/196', 'Feminino', '242.545.987-88', 92, '9215-5545', '9989-8994', '69.028-34', 'Minhas Gerais', 'Manaus', 'Flores', '1, 20, Sta Cruz', '20', 'Flores', 'Nenhum', 'P', '02/05/2020', '07:48:32'),
 (6, '', 'sandri@gmail.com', 'ea09b9076e2b350e9de8278650b3bc3cf5a3c6b085a4bb85655364bfadf3d753665300ef4952405a0cb99c4dee07100155920dfbef40ad4c97885322aedccb60', 0, 'Sandri Emilly', '15/11/200', 'Feminino', '242.545.987-89', 92, '9215-5545', '9989-8994', '69.028-34', 'Minhas Gerais', 'Manaus', 'Flores', '1, 20, Sta Cruz', '20', 'Flores', 'Nenhum', 'P', '02/05/2020', '07:49:45');
 
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `produto`
+--
+
+CREATE TABLE `produto` (
+  `id` int(11) NOT NULL,
+  `produto` varchar(255) NOT NULL,
+  `descricao` varchar(255) NOT NULL,
+  `preco` int(10) NOT NULL,
+  `desconto` int(11) NOT NULL,
+  `parcela` int(2) NOT NULL,
+  `forma_pgto` varchar(60) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `produto`
+--
+
+INSERT INTO `produto` (`id`, `produto`, `descricao`, `preco`, `desconto`, `parcela`, `forma_pgto`) VALUES
+(1, 'Camisa de Manga', 'Camisas lindas e baratas.', 155, 5, 2, 'Boleto ou Cartão'),
+(2, 'Camisa de Manga', 'Camisas lindas e baratas.', 155, 5, 2, 'Boleto ou Cartão'),
+(3, 'Camisa de Manga', 'Camisas lindas e baratas.', 155, 5, 2, 'Boleto ou Cartão'),
+(4, 'Camisa de Manga', 'Camisas lindas e baratas.', 155, 5, 2, 'Boleto ou Cartão'),
+(5, 'Camisa de Manga', 'Camisas lindas e baratas.', 155, 5, 2, 'Boleto ou Cartão'),
+(6, 'Camisa de Manga', 'Camisas lindas e baratas.', 155, 5, 2, 'Boleto ou Cartão'),
+(7, 'Camisa de Manga', 'Camisas lindas e baratas.', 155, 5, 2, 'Boleto ou Cartão'),
+(8, 'Camisa de Manga', 'Camisas lindas e baratas.', 155, 5, 2, 'Boleto ou Cartão'),
+(9, 'Camisa de Manga', 'Camisas lindas e baratas.', 155, 5, 2, 'Boleto ou Cartão'),
+(10, 'Camisa de Manga', 'Camisas lindas e baratas.', 155, 5, 2, 'Boleto ou Cartão'),
+(11, 'Camisa de Manga', 'Camisas lindas e baratas.', 155, 5, 2, 'Boleto ou Cartão'),
+(12, 'Camisa de Manga', 'Camisas lindas e baratas.', 155, 5, 2, 'Boleto ou Cartão'),
+(13, 'Camisa de Manga', 'Camisas lindas e baratas.', 155, 5, 2, 'Boleto ou Cartão'),
+(14, 'Camisa de Manga', 'Camisas lindas e baratas.', 155, 5, 2, 'Boleto ou Cartão');
+
 --
 -- Índices para tabelas despejadas
 --
@@ -77,6 +112,12 @@ ALTER TABLE `clientes`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Índices para tabela `produto`
+--
+ALTER TABLE `produto`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT de tabelas despejadas
 --
 
@@ -85,6 +126,12 @@ ALTER TABLE `clientes`
 --
 ALTER TABLE `clientes`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT de tabela `produto`
+--
+ALTER TABLE `produto`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -1,6 +1,6 @@
 <?php 
-	$prodh = $conexao->select('*', 'produtos', 'LIMIT 0,2', ['']);
-	$prodb = $conexao->select('*', 'produtos', 'LIMIT 2,9', ['']);
+	$prodh = $conexao->select('*', 'produto', 'LIMIT 0,2', ['']);
+	$prodb = $conexao->select('*', 'produto', 'LIMIT 2,9', ['']);
 ?>
 
 
